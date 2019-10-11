@@ -7,6 +7,16 @@ namespace inheritanceandpolymorphysm
     {
         private string name;
         protected string sound;
+        protected AnimalIdInfo animalIdInfo=new AnimalIdInfo();
+        public void SetAnimalIDInfo(int idNum,string owner)
+        {
+            animalIdInfo.IDNum=idNum;
+            animalIdInfo.Owner=owner;
+        }
+        public void GetAnimalIdInfo()
+        {
+            Console.WriteLine($"{Name} has the id of {animalIdInfo.IDNum=} and is owned by {animalIdInfo.Owner}");
+        }
         public void MakeSound()
         {
             Console.WriteLine($"{Name} says {Sound}");

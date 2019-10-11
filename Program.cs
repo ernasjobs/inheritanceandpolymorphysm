@@ -24,6 +24,11 @@ namespace inheritanceandpolymorphysm
             grover.SetAnimalIDInfo(12345,"Greta");
             whisker.GetAnimalIdInfo();
             grover.GetAnimalIdInfo();
+            Animal.AnimalHealth getHealth=new Animal.AnimalHealth();
+            Console.WriteLine("Is my animal healthy?:{0}",getHealth.HealthyWeight(11,46));
+
+
+
             Console.ReadKey();
 
         }

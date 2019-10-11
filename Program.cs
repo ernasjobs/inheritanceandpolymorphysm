@@ -20,7 +20,10 @@ namespace inheritanceandpolymorphysm
             grover.Sound="Wooof";
             whisker.MakeSound();
             grover.MakeSound();
-
+            whisker.SetAnimalIDInfo(1234,"Ernasi");
+            grover.SetAnimalIDInfo(12345,"Greta");
+            whisker.GetAnimalIdInfo();
+            grover.GetAnimalIdInfo();
             Console.ReadKey();
 
         }

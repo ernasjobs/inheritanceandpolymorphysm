@@ -15,7 +15,7 @@ namespace inheritanceandpolymorphysm
         }
         public void GetAnimalIdInfo()
         {
-            Console.WriteLine($"{Name} has the id of {animalIdInfo.IDNum=} and is owned by {animalIdInfo.Owner}");
+            Console.WriteLine($"{Name} has the id of {animalIdInfo.IDNum} and is owned by {animalIdInfo.Owner}");
         }
         public void MakeSound()
         {
@@ -58,6 +58,21 @@ namespace inheritanceandpolymorphysm
                 else
                 {
                     sound=value;
+                }
+            }
+        }
+        public class AnimalHealth
+        {
+            public bool HealthyWeight(double height, double weight)
+            {
+                double calc=height/weight;
+                if((calc>=.18) && (calc<=.27))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
                 }
             }
         }

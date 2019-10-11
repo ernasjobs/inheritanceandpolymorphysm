@@ -26,7 +26,7 @@ namespace inheritanceandpolymorphysm
              get {return name;}
             set
             {
-                if(!value.Any(char.IsDigit))
+                if(value.Any(char.IsDigit))
                 {
                     name="No name";
                 }

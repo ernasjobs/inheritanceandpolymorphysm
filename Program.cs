@@ -6,7 +6,23 @@ namespace inheritanceandpolymorphysm
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Animal whisker=new Animal()
+            {
+                Name="Wisker",
+                Sound="Maoy"
+            };
+            Dog grover=new Dog()
+            {
+                Name="Grover",
+                Sound="Woof",
+                Sound2="Grrrr"
+            };
+            grover.Sound="Wooof";
+            whisker.MakeSound();
+            grover.MakeSound();
+
+            Console.ReadKey();
+
         }
     }
 }
